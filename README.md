@@ -92,7 +92,7 @@ class BeatDrop(milight.Effect):
             yield((brightness, [1.0], {light: self.light}))
 
 # Now call the BeatDrop effect for 10 seconds with a quality of 20 to get 20 brightness flashes in 10 seconds
-milight.run_effect(BeatDrop(0, 20))
+milight.run_effect(BeatDrop(0, 20), 10)
 
 # Close the connection to the controller
 milight.destroy()
