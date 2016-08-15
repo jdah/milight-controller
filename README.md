@@ -14,8 +14,7 @@ pip install milight-controller
 
 # Usage
 ```python
-import milight
-from milight import Effect
+from milight_controller import milight
 
 # Control fade quality for fade effect
 # Nothing above 15 tends to make a difference in quality.
@@ -81,7 +80,7 @@ milight.get_party_mode()    # Party mode string from milight.PARTY_MODES
 
 # All effects have only 1 parameter:
 #   light - The light group that they apply to. Use '0' for all lights.
-class BeatDrop(Effect):
+class BeatDrop(milight.Effect):
     def __init__(self, light, quality):
         self.light, self.quality = light, quality
 
