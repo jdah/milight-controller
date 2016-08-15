@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name='milight-controller',
-    version='1.0',
+    version='1.0.1',
     description='Controller for MiLight RGB lights',
     long_description='See GitHub for extra info: https://github.com/jdah/milight-controller',
     url='https://github.com/jdah/milight-controller',
